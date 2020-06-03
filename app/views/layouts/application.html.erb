@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsTemplate</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%= "Signed in as #{current_user.name}" if signed_in? %>
+      <%= link_to "My Page", user_path(current_user.id) if signed_in? %>
+      <%= link_to 'Sign In', sessions_new_path unless signed_in? %>
+      <%= link_to 'Sign Out', sessions_destroy_path if signed_in? %>
+      <%= link_to 'All Users', users_path if signed_in? %>
+    </header>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<h1>
+Sign in with your name...
+</h1>
+
+  <%= form_for @user, url: sessions_create_path, method: :get do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: 'Name',
+          required: true%>
+    <%= f.submit 'Sign In'%>
+  <% end %>
+
+  <h4>
+    <strong>
+      Quick Access:
+    </strong>
+  </h4>
+
+  <div>
+    <ol>
+    <% @users.order(id: :desc).each do |user| %>
+      <li>
+        <strong>
+          <%= link_to "Sign in as: #{user.name}",
+              sessions_create_path("user" => { "name" => user.name }),
+              method: :get
+              %>
+        </strong>
+      </li>
+    <% end %>
+    </ol>
+  </div>
