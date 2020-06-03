@@ -3,6 +3,7 @@
 This repository aims helping people to understand a basic friendship model on rails.
 
 # [ARTICLE LINK](https://medium.com/@kblycaglayan/how-to-create-the-simplest-friendship-model-on-rails-de0ab51448ec)
+![second_article](https://user-images.githubusercontent.com/60448833/83687765-e91fcc80-a5f4-11ea-8315-e67be594b11a.png)
 
 # Author
 
