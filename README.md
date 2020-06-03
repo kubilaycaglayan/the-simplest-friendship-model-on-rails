@@ -1,24 +1,63 @@
-# README
+# THE SIMPLEST FRIENDSHIP IN RUBY ON RAILS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repository aims helping people to understand a basic friendship model on rails.
 
-Things you may want to cover:
+# [ARTICLE LINK](https://medium.com/@kblycaglayan/how-to-create-the-simplest-friendship-model-on-rails-de0ab51448ec)
 
-* Ruby version
+# Author
 
-* System dependencies
+Kubilay Caglayan
+- Github: [@kubilaycaglayan](https://github.com/kubilaycaglayan)
+- Twitter: [@kbcaglayan](https://twitter.com/kbcaglayan)
+- Linkedln: [kubilay-caglayan](https://www.linkedin.com/in/kubilaycaglayan/)
+- [Portfolio](https://www.kubilaycaglayan.com/)
 
-* Configuration
+# How to Run Code
+- Run `git clone https://github.com/kubilaycaglayan/How-to-Create-the-Simplest-Friendship-Model-on-Rails.git` in the terminal.
+- cd into the directory.
+- run `bundle install`
+- run `rails db:migrate && rails db:seed`
+- Run `rails console` in the terminal.
 
-* Database creation
+# Usage
+- Within the rails console, you can:
+- create users
+- send invitations
+- accept invitations by updating the records
+- reject invitations by deleting the records
+- run class and instance methods to investigate user relationships.
 
-* Database initialization
+# Models
+- User
+- Invitation
 
-* How to run the test suite
+# Associations
+- User can create invitations
+- Invitation belongs to user.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+# Automated Test Section
+- There is no automated tests for this project.
 
-* ...
+
+# Feature & Issues Section
+This is an open source project. Feel free to add your feedback. If, for any reason, this project doesn't work as supposed to be in your computer, create an issue so we can help you out with it. Lastly, you can request for a feature to be added.
+
+[Issue Page](https://github.com/kubilaycaglayan/How-to-Create-the-Simplest-Friendship-Model-on-Rails/issues)
+
+# Built With
+
+Ruby on Rails
+Git
+VS Code
+Atom
+
+# Show your support
+Give a star if you like this project!
+
+# Acknowledgments
+- The Odin project for the project plan
+- https://www.theodinproject.com/courses/ruby-on-rails/lessons/associations
+
+# License
+This project is MIT licensed

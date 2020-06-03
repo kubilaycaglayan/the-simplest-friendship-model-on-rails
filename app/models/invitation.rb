@@ -22,3 +22,4 @@ class Invitation < ApplicationRecord
   end
 
 end
+
